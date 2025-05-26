@@ -1,0 +1,28 @@
+# Python
+*.pyc
+__pycache__/
+.env
+.venv/
+venv/
+*.sqlite3
+
+# Django
+db.sqlite3
+
+# Node/Angular
+node_modules/
+dist/
+build/
+frontend/dist/
+.angular/
+.angular-cache/
+tmp/
+
+# Docker
+*.log
+*.pid
+docker-compose.override.yml
+
+# VS Code e IDEs
+.vscode/
+.idea/

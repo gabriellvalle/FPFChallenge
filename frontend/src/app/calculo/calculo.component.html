@@ -1,0 +1,38 @@
+<body>
+<section>
+  <form (ngSubmit)="enviar()" #form="ngForm">
+    <h2>Processamento</h2>
+
+    <label>Número 1:</label>
+    <input type="number" [(ngModel)]="num1" name="num1" required>
+
+    <label>Número 2:</label>
+    <input type="number" [(ngModel)]="num2" name="num2" required>
+
+    <label>Número 3:</label>
+    <input type="number" [(ngModel)]="num3" name="num3" required>
+
+    <button type="submit">Calcular</button>
+  </form>
+
+  <div class="table-container" *ngIf="requisicoes.length > 0">
+    <h4>RESULTADOS</h4>
+    <table>
+      <tr>
+        <th>ID</th>
+        <th>Números</th>
+        <th>Status</th>
+        <th>Média</th>
+        <th>Mediana</th>
+      </tr>
+      <tr *ngFor="let req of requisicoes">
+        <td>{{ req.id }}</td>
+        <td>{{ req.num1 }}, {{ req.num2 }}, {{ req.num3 }}</td>
+        <td>{{ req.status }}</td>
+        <td>{{ req.media !== null ? (req.media | number:'1.2-2') : '-' }}</td>
+        <td>{{ req.mediana !== null ? (req.mediana | number:'1.2-2') : '-' }}</td>
+      </tr>
+    </table>
+  </div>
+</section>
+</body>

@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  display: block;
+  background-color: #50108b;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: auto;
+  min-height: 100vh;
+  padding-bottom: 50px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  gap: 40px;
+}
+
+form {
+  background: #2d294f;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  width: 100%;
+  max-width: 500px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 700;
+  color: #fff;
+}
+
+input[type="number"] {
+  width: 96%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 15px;
+  font-size: 16px;
+  background: #ececec;
+  color: #333;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #6c5ce7;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #5a4bcf;
+}
+
+/* Tabela */
+.table-container {
+  width: 100%;
+  max-width: 700px;
+  background: #3a3570;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+h4 {
+  text-align: center;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 12px;
+  text-align: center;
+  font-weight: 600;
+}
+
+th {
+  background-color: #524aa3;
+  color: white;
+}
+
+td {
+  background-color: #2f2a5e;
+  color: #ffffff;
+  border-bottom: 1px solid #4b447e;
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
