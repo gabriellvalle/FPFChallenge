@@ -121,7 +121,14 @@ docker-compose up --build
 Espere alguns insantes para os containers subirem completamente, isto pode durar alguns poucos minutos.
 Em seguida, acesse:
 - Frontend (Angular): http://localhost:4200 (aqui é onde se poderá usar a interce e aplicação)
-- Backend (API Django): http://localhost:8000
+- Backend (API Django): http://localhost:8000/admin/ (⚠️ Obs: o backend não possui página inicial, apenas o painel /admin e os endpoints da API.)
+
+Após subir os containers, execute:
+```bash
+docker exec -it django_app python manage.py createsuperuser
+```
+Basta seguir as instruções de criação e acessar.
+
 - Painel do RabbitMQ: http://localhost:15672
 ```bash
 Usuário: guest
